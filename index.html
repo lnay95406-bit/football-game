@@ -2,25 +2,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>ဘောလုံးခန့်မှန်းဂိမ်း</title>
+    <title>၂၀၂၆ ဘောလုံးပွဲမှန်းဂိမ်း</title>
     <style>
         body { text-align: center; padding: 50px; font-family: sans-serif; }
-        button { padding: 15px 30px; font-size: 18px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 10px; }
-        div { margin-top: 30px; }
+        button { padding: 15px 30px; font-size: 18px; background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 5px; }
+        .payment-div { margin-top: 30px; }
+        .pay-btn { background-color: #007bff; margin-top: 10px; }
     </style>
 </head>
 <body>
 
-    <h1>၂၀၂၆ ဘောလုံးခန့်မှန်းဂိမ်း</h1>
-    <p>ဘယ်အသင်းနိုင်မယ် ထင်လဲ?</p>
+    <h1>၂၀၂၆ ဘောလုံးပွဲမှန်းဂိမ်း</h1>
+    <p>ဘယ်အသင်းနိုင်မလဲ ထင်လဲ?</p>
     <button onclick="guess('Team A')">Team A နိုင်မည်</button>
     <button onclick="guess('Team B')">Team B နိုင်မည်</button>
-    
+
     <p id="result" style="font-size: 20px; font-weight: bold;"></p>
 
-    <div style="margin-top: 30px;">
+    <div class="payment-div">
         <h3>ငွေသွင်းရန် (KPay/Wave):</h3>
         <p>09-XXXXXXXX သို့ ငွေလွှဲပြီး Screenshot ပို့ပေးပါ</p>
+        <button class="pay-btn" onclick="window.location.href='https://t.me/Foodball2026'">ငွေသွင်းပြီးရင် နှိပ်ပါ</button>
     </div>
 
     <script>
