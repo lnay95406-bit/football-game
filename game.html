@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billiards Table</title>
+    <style>
+        body { background-color: #1a1a2e; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        
+        .table { 
+            width: 300px; height: 180px; background-color: #0b6623; 
+            border: 10px solid #5c4033; position: relative; 
+        }
+        
+        /* အပေါက် ၄ ခု */
+        .pocket { width: 25px; height: 25px; background-color: black; border-radius: 50%; position: absolute; }
+        .p-tl { top: -12px; left: -12px; }
+        .p-tr { top: -12px; right: -12px; }
+        .p-bl { bottom: -12px; left: -12px; }
+        .p-br { bottom: -12px; right: -12px; }
+
+        .ball { width: 20px; height: 20px; border-radius: 50%; position: absolute; top: 50%; transition: left 0.5s ease; }
+        .white-ball { background-color: white; left: 10%; }
+        .red-ball { background-color: red; left: 70%; }
+    </style>
+</head>
+<body>
+
+    <div class="table">
+        <div class="pocket p-tl"></div>
+        <div class="pocket p-tr"></div>
+        <div class="pocket p-bl"></div>
+        <div class="pocket p-br"></div>
+
+        <div class="ball white-ball"></div>
+        <div class="ball red-ball"></div>
+    </div>
+
+      <script>
+        // ဒီနေရာမှာ .ball အတန်းအစားပါတဲ့ ဘောလုံးအားလုံးကို ရွေးလိုက်တာပါ
+        const balls = document.querySelectorAll('.ball');
+        
+        balls.forEach(ball => {
+            ball.addEventListener('click', () => {
+                // ဘယ်ဘောလုံးကိုပဲ နှိပ်နှိပ် ဒီအမိန့်က အလုပ်လုပ်ပါမယ်
+                ball.style.left = "65%";
+            });
+        });
+    </script>
+
+</body>
+</html>

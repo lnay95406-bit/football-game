@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background: #000; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+.game-container {
+    width: 100vw; height: 100vh;
+    background: linear-gradient(180deg, #0f0726 0%, #250e46 100%);
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 12px; position: relative;
+}
+
+.top-bar, .bottom-bar { display: flex; justify-content: space-between; align-items: center; }
+.profile { display: flex; align-items: center; gap: 8px; }
+.avatar { width: 45px; height: 45px; background: #4b2386; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 2px solid #dfa124; }
+.name { display: block; font-size: 13px; color: #fff; font-weight: bold; }
+.rank { background: #1e0936; padding: 1px 6px; border-radius: 8px; font-size: 10px; color: #a872ff; }
+
+.currencies { display: flex; gap: 8px; }
+.box { background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 15px; font-size: 11px; color: #fff; }
+.settings { color: #fff; font-size: 20px; }
+
+.main-content { display: flex; justify-content: space-between; align-items: flex-end; flex-grow: 1; margin: 10px 0; }
+.left-menu { display: flex; flex-direction: column; gap: 10px; }
+.icon-item { background: rgba(255,255,255,0.1); width: 42px; height: 42px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 16px; color: #fff; position: relative; }
+.icon-item span { position: absolute; bottom: -12px; font-size: 8px; }
+.quest { background: rgba(0,0,0,0.4); padding: 6px; border-radius: 8px; margin-top: 10px; border-left: 3px solid #6a0dad; }
+
+.cards-container { display: flex; gap: 10px; height: 80%; }
+.card { width: 140px; border-radius: 12px; padding: 10px; display: flex; align-items: flex-end; color: #fff; font-size: 12px; }
+.card-1 { background: linear-gradient(145deg, #cc6600, #331100); }
+.card-2 { background: linear-gradient(145deg, #0066cc, #001133); }
+.sub-cards { display: flex; flex-direction: column; gap: 8px; }
+.s-card { background: #111a2e; width: 100px; height: 50px; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 11px; color: #fff; border: 1px solid #1d3557; }
+
+.shop-btn { background: #ffcc00; color: #000; padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: bold; }
+.nav-links { display: flex; gap: 15px; color: #bfa3ff; font-size: 12px; }
+.play-btn { background: linear-gradient(90deg, #b5179e, #7209b7); color: #fff; border: 1px solid #ff007f; padding: 8px 30px; font-size: 14px; font-weight: bold; border-radius: 6px; box-shadow: 0 0 10px #b5179e; }
